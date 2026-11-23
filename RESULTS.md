@@ -9,17 +9,17 @@ Tool parts that I chose: Part 3 Robot Framework and Part 4 Cypress
 - Step 0.4, locator of Excluded tools: `select`
 - Step 0.4, locator of Must be vegetarian: `#default-checkbox`
 - Step 0.4, locator of Custom Pizza Name: `input#pizza-name`
-- Step 0.5, pizza name, tool and calories of the run by hand:
+- Step 0.5, pizza name, tool and calories of the run by hand: Lab Pizza 20261123-174213, Pizza cutter, 475 calories per slice
 
 | Step | Actual result | Pass or fail |
 |------|---------------|--------------|
-| 1    |               |              |
-| 2    |               |              |
-| 3    |               |              |
-| 4    |               |              |
-| 5    |               |              |
-| 6    |               |              |
-| 7    |               |              |
+| 1    | The heading reads "Looking to break out of your pizza routine?" | Pass |
+| 2    | Max Calories per Slice (1000), Excluded tools, Must be vegetarian and Custom Pizza Name appear | Pass |
+| 3    | Max Calories shows 600 (replaced 1000), Knife selected, vegetarian ticked, name Lab Pizza 20261123-174213 | Pass |
+| 4    | Name: Lab Pizza 20261123-174213, Tool: Pizza cutter, Calories per slice: 475 | Pass |
+| 5    | The page says "Please log in first." | Pass |
+| 6    | Both boxes already held admin; after Sign in the page shows "Latest pizza recommendations" | Pass |
+| 7    | Lab Pizza 20261123-174213 (tool=Pizza cutter, ingredients_number=7), same tool as step 4 (second line, another user's pizza was newest) | Pass |
 
 ## Part 3: Robot Framework
 - robot --version: Robot Framework 7.5.1 (Python 3.13.11 on darwin)
